@@ -1,0 +1,116 @@
+.header {
+    height: 80px;
+    line-height: 80px;
+    position: fixed;
+    z-index: 1;
+    background-color: $primery-color;
+    @include sizeColor(24px, $font-color);
+}
+
+.logo {
+    height: 60px;
+}
+
+a:hover {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.humburger {
+    display: none;
+}
+
+.serv {
+    position: relative;
+}
+
+.services,
+.barMenu {
+    @include noneAbsolute(none, absolute);
+}
+
+.bar {
+    display: none;
+}
+
+.header .p-4:hover .services {
+    right: -50px;
+    width: 250px;
+    @include dropdownMenu(block, center, 20px, none, 50px, $primery-color, 0);
+}
+
+.header .p-3:hover .barMenu {
+    right: 0;
+    width: 200px;
+    @include dropdownMenu(block, center, 20px, none, 50px, $primery-color, 0);
+}
+
+.sliders {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* блок с названием и ценой*/
+
+.motoName {
+    position: absolute;
+    top: 350px;
+    left: 120px;
+    height: 60px;
+    width: 400px;
+    background-color: $primery-color;
+}
+
+.motoName p {
+    @include sizeColor(24px, $font-color);
+    padding: 10px 20px;
+}
+
+.vLine {
+    position: absolute;
+    width: 5px;
+    height: 60px;
+    background-color: $grey-color;
+    left: 280px;
+    top: 0;
+}
+
+.motoName .motoPrice {
+    position: absolute;
+    font-size: 15px;
+    width: 100px;
+    right: 0;
+    top: 5px;
+    padding: 0 0px;
+}
+
+@media only screen and (max-width: 1020px) and (min-width: 844px) {
+    .header {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 845px) and (min-width: 768px) {
+    .header {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 240px) {
+    .header .p-4 {
+        display: none;
+    }
+    .bar {
+        display: block;
+    }
+    .humburger {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .motoName {
+        display: none;
+    }
+}

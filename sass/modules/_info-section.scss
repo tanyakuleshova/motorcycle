@@ -1,0 +1,56 @@
+.info-section{
+    background-color: $info-ba;
+    font-family: 'Kanit';
+}
+.info-topic{
+    font: 40px 'Kanit';
+    margin: 40px 0 20px 0;
+    text-align: center;
+}
+.info-text{
+    margin: 0 20px 0 20px;
+}
+.info-article-name{
+    font: 30px 'Kanit';
+    background-color: $article-name-ba;
+    padding-left: 20px; 
+}
+.article-text{
+    font-size: 18px;
+    padding: 20px 0;
+    line-height: 30px;
+    text-align: justify;
+    
+    span{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+.info-btn-row{
+    height: 80px;
+}
+.info-btn{
+    @extend .motos-btn;
+    margin: 30px 0 70px 50px;
+    padding: 10px 25px 10px 25px;
+    
+}
+
+
+@media only screen and (max-width: 1368px){
+    .info-section img{
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 1155px){
+    .info-section img{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 882px){
+    .info-section img{
+        width: 300px;
+    }
+}

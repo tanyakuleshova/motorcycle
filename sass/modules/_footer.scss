@@ -1,0 +1,177 @@
+.footer {
+    background: url("../images/footer.jpg") no-repeat;
+    background-size: cover;
+    height: 800px;
+    text-align: center;
+}
+
+.bottom-btn {
+    @extend .info-btn;
+    font-size: 25px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.bottom-text {
+    font: 70px 'Kanit';
+    margin: 150px 0 50px 0;
+    color: white;
+}
+
+.colums {
+    padding-left: 100px;
+    background-color: black;
+    a {
+        color: white;
+        font: 15px 'Kanit';
+        text-decoration: none;
+        &:hover {
+            color: $font-color;
+        }
+    }
+    ul li:nth-child(1) {
+        color: $font-color;
+        font-size: 20px;
+    }
+    li {
+        list-style-type: none;
+    }
+}
+
+.footer-separator {
+    background-color: black;
+}
+
+.separator {
+    margin: 100px 0 50px 0;
+    height: 1px;
+    background-color: $grey-color;
+}
+
+.footer-contacts {
+    height: 100px;
+    color: white;
+    background-color: black;
+    .icons {
+        a {
+            color: white;
+        }
+        i {
+            transition: 0.5s;
+            padding: 14px 40px 0 0;
+        }
+        a:hover {
+            color: $font-color;
+        }
+        p {
+            font: 25px 'Kanit';
+            color: $font-color;
+            padding-right: 100px;
+        }
+    }
+}
+
+.subscribe {
+    width: 320px;
+}
+
+.footer-form {
+    width: 200px;
+    font: 15px 'Kanit';
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    background-color: $form-ba;
+    &::placeholder {
+        color: white;
+    }
+}
+
+.footer-btn {
+    @extend .info-btn;
+    background-color: $form-btn-ba;
+    margin: 0 0 0 -7px;
+    box-sizing: border-box;
+    width: 120px;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 962px) and (min-width: 575px) {
+    .icons {
+        flex-direction: column;
+    }
+    .footer-contacts .icons i {
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 962px) {
+    .footer-contacts {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 882px) {
+    .colums {
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 882px) and (min-width: 575px) {
+    .subscribe {
+        margin-left: -50px;
+    }
+}
+
+@media only screen and (max-width: 882px) and (min-width: 575px) {
+    .subscribe,
+    {
+        margin-left: -100px;
+    }
+}
+
+@media only screen and (max-width: 640px) and (min-width: 575px) {
+    .icons,
+    {
+        margin-left: -50px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .icons,
+    .subscribe {
+        margin-left: 70px;
+    }
+    .footer-contacts .icons i {
+        padding-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    .bottom-text {
+        font-size: 50px;
+    }
+    .icons,
+    .subscribe {
+        margin-left: 20px;
+    }
+    .footer-contacts .icons p {
+        padding-right: 30px;
+    }
+    .footer-contacts .icons .three-icon a i {
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    .subscribe {
+        width: 270px;
+    }
+    .subscribe .footer-form {
+        width: 150px;
+    }
+    .footer-btn {
+        width: 120px;
+    }
+}

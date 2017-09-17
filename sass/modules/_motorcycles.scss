@@ -1,0 +1,75 @@
+.motorcycles-section {
+    height: 700px;
+    background-color: $moto-ba;
+}
+
+.motorcycles .p-4 {
+    background-color: $primery-color;
+    height: 400px;
+}
+
+.moto {
+    width: 250px;
+}
+
+.motos {
+    font: 24px 'Kanit';
+    text-align: center;
+    position: relative;
+    color: white;
+    .motos-name {
+        padding: 15px 0 10px 0;
+        margin: 0;
+        transition: 0.2s;
+        &:hover {
+            color: $font-color;
+        }
+    }
+    p {
+        padding: 0 0 10px 0;
+        transition: 0.2s;
+        &:hover {
+            color: $font-color;
+        }
+    }
+}
+
+.new {
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font: italic 15px 'Kanit';
+    background-color: $new-ba;
+    line-height: 30px;
+    color: white;
+}
+
+.motos-btn {
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 204, 0.7);
+    color: white;
+    border-radius: 10px;
+    font: 15px 'Kanit';
+    transition: 0.3s;
+    box-shadow: 0px 11px 5px -7px rgba(0, 0, 0, 0.75);
+}
+
+.motos-btn:hover {
+    box-shadow: 0px 11px 11px -7px rgba(0, 0, 0, 0.75);
+    color: white;
+    background-color: rgb(0, 0, 230);
+}
+
+@media only screen and (max-width: 1020px) and (min-width: 627px) {
+    .motorcycles-section {
+        height: 1000px;
+    }
+}
+
+@media only screen and (max-width: 627px) {
+    .motorcycles-section {
+        height: 1500px;
+    }
+}

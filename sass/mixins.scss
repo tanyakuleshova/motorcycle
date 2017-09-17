@@ -1,0 +1,19 @@
+@mixin dropdownMenu($display, $text-align, $font-size, $list-style-type, $line-height, $background-color, $padding) {
+    display: $display;
+    text-align: $text-align;
+    font-size: $font-size;
+    list-style-type: $list-style-type;
+    line-height: $line-height;
+    background-color: $background-color;
+    padding: $padding;
+}
+
+@mixin noneAbsolute($display, $position) {
+    display: $display;
+    position: $position;
+}
+
+@mixin sizeColor($font-size, $color) {
+    font-size: $font-size;
+    color: $color;
+}
